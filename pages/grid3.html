@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        font-size: 2rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: rgba(red, green, blue, alpha);
+      }
+      .grid > div {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div
+        style="
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        "
+      >
+        Data
+      </div>
+      <div
+        style="
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        "
+      >
+        Test
+      </div>
+      <div
+        style="
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 1;
+          grid-row-end: 4;
+        "
+      >
+        Sidebar
+      </div>
+      <div
+        style="
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        "
+      >
+        Info
+      </div>
+      <div
+        style="
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        "
+      >
+        Y
+      </div>
+      <div
+        style="
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 3;
+          grid-row-end: 4;
+        "
+      >
+        X
+      </div>
+      <div
+        style="
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 2;
+          grid-row-end: 4;
+        "
+      >
+        Contact
+      </div>
+    </div>
+  </body>
+</html>

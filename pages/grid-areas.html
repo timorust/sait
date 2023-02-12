@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary-color: #c3c3c3;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+          "data data test sidebar"
+          "info contact contact sidebar";
+        background-color: var(--primary-color);
+        gap: 5px;
+      }
+      .grid > div {
+        --primary-color: #f3f3f3;
+        border: 2px solid teal;
+        background-color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div style="grid-area: data">Data</div>
+      <div style="grid-area: test">Test</div>
+      <div style="grid-area: sidebar">Sidebar</div>
+      <div style="grid-area: info">Info</div>
+      <div style="grid-area: contact">Contact</div>
+    </div>
+  </body>
+</html>
